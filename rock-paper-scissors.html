@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="
+    yourMove='Rock';
+        random=Math.random();
+        if(random >= 0 && random < 1/3 ){
+            computerMove='Rock';
+            alert('computer chose '+computerMove+' you chose '+ yourMove+'\nDraw');
+           
+        }
+         else if(random >= 1/3 && random < 2/3 ){
+            computerMove='Paper';
+            alert(`computer chose ${computerMove} you chose ${yourMove} 
+            You Lose`);
+           
+        }
+        else if(random >= 2/3 && random < 1){
+            computerMove='Scissors';
+         alert(`computer chose ${computerMove} you chose ${yourMove} 
+            You Win `);
+           
+        }
+        
+        
+        
+        ">Rock</button>
+    <button onclick="
+    yourMove='Paper';
+        random=Math.random();
+        if(random >= 0 && random < 1/3 ){
+            computerMove='Rock';
+            alert('computer chose '+computerMove+' you chose '+ yourMove+'\nYou Win');
+           
+        }
+         else if(random >= 1/3 && random < 2/3 ){
+            computerMove='Paper';
+            alert(`computer chose ${computerMove} you chose ${yourMove} 
+            Draw`);
+           
+        }
+        else if(random >= 2/3 && random < 1){
+            computerMove='Scissors';
+         alert(`computer chose ${computerMove} you chose ${yourMove} 
+            You Lose `);
+           
+        }
+        
+        
+        
+        ">Paper</button>
+    <button onclick="
+    yourMove='Scissors';
+        random=Math.random();
+        if(random >= 0 && random < 1/3 ){
+            computerMove='Rock';
+            alert('computer chose '+computerMove+' you chose '+ yourMove+'\nYou Lose');
+           
+        }
+         else if(random >= 1/3 && random < 2/3 ){
+            computerMove='Paper';
+            alert(`computer chose ${computerMove} you chose ${yourMove} 
+            You Win`);
+           
+        }
+        else if(random >= 2/3 && random < 1){
+            computerMove='Scissors';
+         alert(`computer chose ${computerMove} you chose ${yourMove} 
+            Draw `);
+           
+        }
+        
+        
+        
+        ">Scissors</button>
+    <script>
+        let random='';
+        let yourMove='';
+        let computerMove='';
+
+    </script>
+</body>
+</html>
